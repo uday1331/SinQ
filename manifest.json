@@ -2,7 +2,10 @@
   "name": "SinQ",
   "version": "1.0",
   "description": "Surprise In-class quizzes can't stop you. You have better things to do than going to class",
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "activeTab"],
+  "browser_action": {
+    "default_icon": "./resources/toggleoff-logo.png"
+  },
   "background": {
     "scripts": ["background.js"],
     "persistent": false

@@ -11,6 +11,6 @@ window.onload = function() {
       });
     }
   } catch (error) {
-    console.error("ERROR: couldn't find quiz");
+    console.log("Stopped");
   }
 };
