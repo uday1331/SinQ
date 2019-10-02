@@ -1,0 +1,17 @@
+{
+  "name": "SinQ",
+  "version": "1.0",
+  "description": "Surprise In-class quizzes can't stop you. You have better things to do than going to class",
+  "permissions": ["tabs"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://moodle.hku.hk/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "manifest_version": 2
+}
